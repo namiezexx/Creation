@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kyobo.dev.creation.mapper.SocialMapper">
+
+    <select id="findByProviderUid" resultType="SocialDto">
+        SELECT social_seq, user_seq, provider, provider_uid, access_token, refresh_token, nickname
+        FROM social
+        WHERE provider = #{provider}
+        AND provider_uid = #{provider_uid}
+    </select>
+
+    <insert id="save" parameterType="SocialDto">
+        INSERT INTO social (user_seq, provider, provider_uid, access_token, refresh_token, nickname)
+        VALUES ( #{user_seq}, #{provider}, #{provider_uid}, #{access_token}, #{refresh_token}, #{nickname} )
+    </insert>
+</mapper>
