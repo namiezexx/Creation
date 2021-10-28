@@ -12,21 +12,21 @@ import lombok.Setter;
 @AllArgsConstructor
 public class JoinDto {
 
-    @ApiModelProperty(value = "유저의 고유한 id값", required = true, example = "jslee")
+    @ApiModelProperty(value = "유저의 고유한 id값", required = true, example = "admin")
     private String user_id;
 
-    @ApiModelProperty(value = "유저의 고유한 password값", required = true, example = "love1203")
+    @ApiModelProperty(value = "유저의 고유한 password값", required = true, example = "1234567890")
     private String user_pw;
 
-    @ApiModelProperty(value = "별명", required = true, example = "namiezexx")
+    @ApiModelProperty(value = "별명", required = true, example = "admin")
     private String nickname;
 
-    @ApiModelProperty(value = "나이", required = true, example = "41")
+    @ApiModelProperty(value = "나이", required = true, example = "30")
     private int age;
 
-    @ApiModelProperty(value = "이메일", required = true, example = "namiezexx@naver.com")
+    @ApiModelProperty(value = "이메일", required = true, example = "admin@naver.com")
     private String email;
 
-    @ApiModelProperty(value = "휴대폰번호", required = true, example = "01035221767")
+    @ApiModelProperty(value = "휴대폰번호", required = true, example = "01012345678")
     private String phone;
 }

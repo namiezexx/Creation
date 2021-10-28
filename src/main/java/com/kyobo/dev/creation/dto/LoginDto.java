@@ -12,9 +12,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class LoginDto {
 
-    @ApiModelProperty(value = "유저의 고유한 id값", required = true)
+    @ApiModelProperty(value = "유저의 고유한 id값", required = true, example = "admin")
     private String user_id;
 
-    @ApiModelProperty(value = "유저의 고유한 password값", required = true)
+    @ApiModelProperty(value = "유저의 고유한 password값", required = true, example = "1234567890")
     private String user_pw;
 }
