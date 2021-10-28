@@ -3,6 +3,7 @@ package com.kyobo.dev.creation.service;
 import com.google.gson.Gson;
 import com.kyobo.dev.creation.dto.KakaoProfile;
 import com.kyobo.dev.creation.dto.response.RetKakaoAuth;
+import com.kyobo.dev.creation.exception.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -34,8 +35,9 @@ public class KakaoService {
             if (response.getStatusCode() == HttpStatus.OK)
                 return gson.fromJson(response.getBody(), KakaoProfile.class);
         } catch (Exception e) {
-            throw new RuntimeException();
+            throw new UserNotFoundException("없는 유저입니다.");
         }
-        throw new RuntimeException();
+
+        throw new UserNotFoundException("없는 유저입니다.");
     }
 }

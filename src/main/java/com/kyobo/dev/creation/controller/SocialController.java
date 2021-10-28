@@ -59,7 +59,7 @@ public class SocialController {
             SingleDataResponse<UserDto> response = responseService.getSingleDataResponse(true, "회원가입 성공", savedUser);
 
             responseEntity = ResponseEntity.status(HttpStatus.CREATED).body(response);
-        } catch (DuplicatedUsernameException exception) {
+        } catch (Exception exception) {
             logger.debug(exception.getMessage());
             BaseResponse response = responseService.getBaseResponse(false, exception.getMessage());
 
