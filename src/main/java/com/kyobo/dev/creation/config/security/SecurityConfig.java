@@ -39,8 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
                 .and()
                 .authorizeRequests()
-                .antMatchers("/*/login/**", "/*/join/**").permitAll()
-                .anyRequest().hasRole("USER")
+                .antMatchers("/*/login/**", "/*/join/**").permitAll() // login과 join 이외의 페이지는 JWT 토큰없이 접근 불가
+                .anyRequest().hasRole("USER") // JWT 토큰의 권한을 체크하여 USER 권한이 없으면 접근 불가
 
                 .and()
                 .exceptionHandling().accessDeniedHandler(new CustomAccessDeniedHandler())
@@ -48,7 +48,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint(new CustomAuthenticationEntryPoint())
 
                 .and()
-                .addFilterBefore(new JwtFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class); // ID, Password 검사 전에 jwt 필터 먼저 수
+                .addFilterBefore(new JwtFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class); // ID, Password 검사 전에 jwt 필터 먼저 검사
     }
 
     @Override
