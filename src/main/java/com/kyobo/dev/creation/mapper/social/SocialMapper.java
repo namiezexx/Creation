@@ -1,7 +1,6 @@
-package com.kyobo.dev.creation.mapper;
+package com.kyobo.dev.creation.mapper.social;
 
-import com.kyobo.dev.creation.dto.SocialDto;
-import com.kyobo.dev.creation.dto.UserDto;
+import com.kyobo.dev.creation.dto.social.SocialDto;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Optional;

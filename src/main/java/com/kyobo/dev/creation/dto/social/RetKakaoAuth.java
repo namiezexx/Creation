@@ -1,4 +1,4 @@
-package com.kyobo.dev.creation.dto.response;
+package com.kyobo.dev.creation.dto.social;
 
 import lombok.Getter;
 import lombok.Setter;

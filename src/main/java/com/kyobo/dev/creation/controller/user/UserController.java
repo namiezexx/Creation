@@ -1,15 +1,15 @@
-package com.kyobo.dev.creation.controller;
+package com.kyobo.dev.creation.controller.user;
 
-import com.kyobo.dev.creation.dto.JoinDto;
-import com.kyobo.dev.creation.dto.LoginDto;
-import com.kyobo.dev.creation.dto.UserDto;
+import com.kyobo.dev.creation.dto.user.JoinDto;
+import com.kyobo.dev.creation.dto.user.LoginDto;
+import com.kyobo.dev.creation.dto.user.UserDto;
 import com.kyobo.dev.creation.dto.response.BaseResponse;
 import com.kyobo.dev.creation.dto.response.SingleDataResponse;
 import com.kyobo.dev.creation.exception.DuplicatedUsernameException;
 import com.kyobo.dev.creation.exception.LoginFailedException;
 import com.kyobo.dev.creation.exception.UserNotFoundException;
 import com.kyobo.dev.creation.service.ResponseService;
-import com.kyobo.dev.creation.service.UserService;
+import com.kyobo.dev.creation.service.user.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

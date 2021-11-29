@@ -1,37 +1,511 @@
-[2021-10-29 15:18:55:1188][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 97126 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
-[2021-10-29 15:18:55:1189][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
-[2021-10-29 15:18:55:1190][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
-[2021-10-29 15:18:55:1313][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2021-10-29 15:18:55:1314][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2021-10-29 15:18:58:3762][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-[2021-10-29 15:18:58:3773][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-[2021-10-29 15:18:58:3773][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-[2021-10-29 15:18:58:3773][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
-[2021-10-29 15:18:58:3860][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-[2021-10-29 15:18:58:3860][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2545 ms
-[2021-10-29 15:19:00:5961][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
-[2021-10-29 15:19:00:5962][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
-[2021-10-29 15:19:00:5962][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
-[2021-10-29 15:19:00:5962][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
-[2021-10-29 15:19:00:5962][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
-[2021-10-29 15:19:00:6020][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33e51ac2, org.springframework.security.web.context.SecurityContextPersistenceFilter@79dedc74, org.springframework.security.web.header.HeaderWriterFilter@60ce58ad, org.springframework.security.web.authentication.logout.LogoutFilter@70fe82ab, com.kyobo.dev.creation.config.security.JwtFilter@45308a17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46ffea66, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cfc2c4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f58f6, org.springframework.security.web.session.SessionManagementFilter@6efbcd3d, org.springframework.security.web.access.ExceptionTranslationFilter@64acc3bb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30731b19]
-[2021-10-29 15:19:00:6259][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-[2021-10-29 15:19:00:6458][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-[2021-10-29 15:19:00:6489][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-[2021-10-29 15:19:02:8108][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-[2021-10-29 15:19:03:8798][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-[2021-10-29 15:19:03:8823][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-[2021-10-29 15:19:03:8827][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
-[2021-10-29 15:19:03:8854][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-[2021-10-29 15:19:03:8866][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
-[2021-10-29 15:19:03:9193][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
-[2021-10-29 15:19:03:9201][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
-[2021-10-29 15:19:03:9233][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 8.829 seconds (JVM running for 9.481)
-[2021-10-29 15:19:14:20175][http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2021-10-29 15:19:14:20176][http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-[2021-10-29 15:19:14:20187][http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
-[2021-10-29 15:19:14:20215][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/join
-[2021-10-29 15:19:14:20324][http-nio-8081-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity com.kyobo.dev.creation.controller.UserController.join(com.kyobo.dev.creation.dto.JoinDto)]
-[2021-10-29 15:19:14:20340][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
-[2021-10-29 15:19:23:29045][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-[2021-10-29 15:19:23:29110][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 10:30:33:1321][Test worker] INFO  c.k.d.c.CreationApplicationTests - Starting CreationApplicationTests using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 6050 (started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 10:30:33:1326][Test worker] DEBUG c.k.d.c.CreationApplicationTests - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 10:30:33:1333][Test worker] INFO  c.k.d.c.CreationApplicationTests - No active profile set, falling back to default profiles: default
+[2021-11-29 10:30:38:5948][Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 10:30:38:5949][Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 10:30:38:5950][Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 10:30:38:5950][Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 10:30:38:5950][Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 10:30:38:6347][Test worker] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@590d6c76, org.springframework.security.web.context.SecurityContextPersistenceFilter@2db15f70, org.springframework.security.web.header.HeaderWriterFilter@6d293993, org.springframework.web.filter.CorsFilter@25791d40, org.springframework.security.web.authentication.logout.LogoutFilter@44b940a2, com.kyobo.dev.creation.config.security.JwtFilter@448c92fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f15e689, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58feb6b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@251c8145, org.springframework.security.web.session.SessionManagementFilter@44598ef7, org.springframework.security.web.access.ExceptionTranslationFilter@58278366, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e85c21b]
+[2021-11-29 10:30:39:6913][Test worker] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][Test worker] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 10:30:39:6984][Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 10:30:39:7169][Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 10:30:39:7518][Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 10:30:39:7531][Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 10:30:39:7543][Test worker] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 10:30:39:7706][Test worker] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 10:30:39:7716][Test worker] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 10:30:40:7741][Test worker] INFO  c.k.d.c.CreationApplicationTests - Started CreationApplicationTests in 7.223 seconds (JVM running for 8.806)
+[2021-11-29 10:30:40:8033][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 10:30:40:8090][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 10:33:22:1305][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 6191 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 10:33:22:1308][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 10:33:22:1308][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 10:33:22:1437][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 10:33:22:1437][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 10:33:25:4053][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 10:33:25:4064][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 10:33:25:4065][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 10:33:25:4065][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 10:33:25:4170][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 10:33:25:4171][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2733 ms
+[2021-11-29 10:33:27:6384][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 10:33:27:6385][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 10:33:27:6385][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 10:33:27:6385][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 10:33:27:6385][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 10:33:27:6632][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@781e677e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e1f8705, org.springframework.security.web.header.HeaderWriterFilter@12b29111, org.springframework.web.filter.CorsFilter@4018a409, org.springframework.security.web.authentication.logout.LogoutFilter@4da70e4, com.kyobo.dev.creation.config.security.JwtFilter@50188d58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f88326e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58d9d22c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1477e74a, org.springframework.security.web.session.SessionManagementFilter@68682044, org.springframework.security.web.access.ExceptionTranslationFilter@571ddb18, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b771030]
+[2021-11-29 10:33:28:6750][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 10:33:28:6876][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 10:33:28:6912][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 10:33:28:7071][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 10:33:28:7323][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 10:33:28:7339][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 10:33:28:7342][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 10:33:28:7360][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 10:33:28:7385][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 10:33:28:7683][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 10:33:28:7690][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 10:33:28:7722][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.316 seconds (JVM running for 7.955)
+[2021-11-29 10:33:57:36277][http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-29 10:33:57:36279][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-11-29 10:33:57:36285][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[2021-11-29 10:34:03:41843][http-nio-8081-exec-9] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /
+[2021-11-29 10:34:03:41876][http-nio-8081-exec-9] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 10:34:03:42050][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 10:34:03:42057][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 10:34:21:60301][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 10:34:21:60469][http-nio-8081-exec-4] DEBUG c.k.d.c.m.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 10:34:21:60494][http-nio-8081-exec-4] DEBUG c.k.d.c.m.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 10:34:21:60511][http-nio-8081-exec-4] DEBUG c.k.d.c.m.UserMapper.findByUserId - <==      Total: 0
+[2021-11-29 10:34:21:60532][http-nio-8081-exec-4] DEBUG c.k.d.c.c.user.UserController - 잘못된 아이디입니다
+[2021-11-29 10:36:46:204872][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 10:36:46:204912][http-nio-8081-exec-5] DEBUG c.k.d.c.m.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 10:36:46:204913][http-nio-8081-exec-5] DEBUG c.k.d.c.m.UserMapper.findByUserId - ==> Parameters: jslee(String)
+[2021-11-29 10:36:46:204922][http-nio-8081-exec-5] DEBUG c.k.d.c.m.UserMapper.findByUserId - <==      Total: 0
+[2021-11-29 10:36:46:204938][http-nio-8081-exec-5] DEBUG c.k.d.c.c.user.UserController - 잘못된 아이디입니다
+[2021-11-29 12:58:59:8737839][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 12:58:59:8737904][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 12:59:07:1415][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 13027 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 12:59:07:1416][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 12:59:07:1417][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 12:59:07:1552][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 12:59:07:1552][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 12:59:10:4133][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 12:59:10:4144][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 12:59:10:4144][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 12:59:10:4144][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 12:59:10:4233][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 12:59:10:4233][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2680 ms
+[2021-11-29 12:59:12:6437][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 12:59:12:6438][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 12:59:12:6438][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 12:59:12:6438][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 12:59:12:6438][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 12:59:13:6695][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61e36163, org.springframework.security.web.context.SecurityContextPersistenceFilter@e337d16, org.springframework.security.web.header.HeaderWriterFilter@384bf345, org.springframework.web.filter.CorsFilter@5c953d86, org.springframework.security.web.authentication.logout.LogoutFilter@5939349a, com.kyobo.dev.creation.config.security.JwtFilter@15b665ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ddd16a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b3960f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79cc86ff, org.springframework.security.web.session.SessionManagementFilter@765d53b5, org.springframework.security.web.access.ExceptionTranslationFilter@76dddd12, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f85e43b]
+[2021-11-29 12:59:13:6822][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 12:59:13:6936][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 12:59:13:6986][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 12:59:13:7185][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 12:59:13:7431][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 12:59:13:7451][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 12:59:13:7454][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 12:59:13:7472][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 12:59:13:7491][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 12:59:14:7799][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 12:59:14:7806][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 12:59:14:7839][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.406 seconds (JVM running for 8.086)
+[2021-11-29 12:59:21:14890][http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-29 12:59:21:14891][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-11-29 12:59:21:14894][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[2021-11-29 12:59:41:34908][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 12:59:41:35053][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 12:59:41:35078][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: jslee(String)
+[2021-11-29 12:59:41:35096][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 0
+[2021-11-29 12:59:41:35119][http-nio-8081-exec-10] DEBUG c.k.d.c.c.user.UserController - 잘못된 아이디입니다
+[2021-11-29 13:02:43:217095][HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s774ms), soft-evicting connections from pool.
+[2021-11-29 15:08:42:7775930][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:08:42:7775983][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:09:47:1507][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 18639 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:09:47:1509][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:09:47:1509][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:09:47:1618][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:09:47:1618][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:09:49:4085][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:09:49:4095][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:09:49:4096][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:09:49:4096][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:09:49:4185][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:09:49:4185][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2567 ms
+[2021-11-29 15:09:51:6347][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:09:51:6347][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:09:51:6347][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:09:51:6347][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:09:51:6347][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:09:52:6567][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e0aefd8, org.springframework.security.web.context.SecurityContextPersistenceFilter@58d9d22c, org.springframework.security.web.header.HeaderWriterFilter@78a528d4, org.springframework.web.filter.CorsFilter@55706b8f, org.springframework.security.web.authentication.logout.LogoutFilter@305a588e, com.kyobo.dev.creation.config.security.JwtFilter@52a9c099, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@746f3a0c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@313a9a6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ae728e1, org.springframework.security.web.session.SessionManagementFilter@22a48e7, org.springframework.security.web.access.ExceptionTranslationFilter@718d2825, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1477e74a]
+[2021-11-29 15:09:52:6752][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:09:52:6895][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:09:52:6923][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:09:52:7123][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:09:53:7449][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:09:53:7465][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:09:53:7469][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:09:53:7486][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:09:53:7501][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:09:53:7797][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:09:53:7806][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:09:53:7845][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.417 seconds (JVM running for 8.101)
+[2021-11-29 15:10:20:35343][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:10:20:35398][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:10:25:1219][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 18690 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:10:25:1220][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:10:25:1221][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:10:26:1343][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:10:26:1343][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:10:28:3793][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:10:28:3803][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:10:28:3803][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:10:28:3803][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:10:28:3901][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:10:28:3901][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2557 ms
+[2021-11-29 15:10:30:6169][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:10:30:6169][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:10:30:6169][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:10:30:6169][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:10:30:6169][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:10:31:6473][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25e45757, org.springframework.security.web.context.SecurityContextPersistenceFilter@22a48e7, org.springframework.security.web.header.HeaderWriterFilter@718d2825, org.springframework.web.filter.CorsFilter@70d11cf9, org.springframework.security.web.authentication.logout.LogoutFilter@496152af, com.kyobo.dev.creation.config.security.JwtFilter@4e0aefd8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58d9d22c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7bd2ed5d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55706b8f, org.springframework.security.web.session.SessionManagementFilter@40af0482, org.springframework.security.web.access.ExceptionTranslationFilter@4f5be0d5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4018a409]
+[2021-11-29 15:10:31:6623][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:10:31:6748][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:10:31:6773][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:10:31:6929][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:10:31:7267][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:10:31:7282][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:10:31:7285][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:10:31:7301][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:10:31:7311][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:10:32:7599][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:10:32:7606][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:10:32:7642][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.209 seconds (JVM running for 7.914)
+[2021-11-29 15:27:46:1042134][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:27:46:1042193][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:27:51:1190][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 19545 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:27:51:1194][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:27:51:1194][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:27:51:1320][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:27:51:1320][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:27:53:3740][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:27:53:3752][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:27:53:3753][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:27:53:3753][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:27:53:3849][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:27:53:3849][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2528 ms
+[2021-11-29 15:27:56:6161][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:27:56:6162][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:27:56:6162][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:27:56:6162][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:27:56:6162][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:27:56:6490][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76d26c3c, org.springframework.security.web.context.SecurityContextPersistenceFilter@39e165f6, org.springframework.security.web.header.HeaderWriterFilter@6efbcd3d, org.springframework.web.filter.CorsFilter@506cdf19, org.springframework.security.web.authentication.logout.LogoutFilter@2f3768cf, com.kyobo.dev.creation.config.security.JwtFilter@4d8a4095, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bce0b0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dfc0974, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee13900, org.springframework.security.web.session.SessionManagementFilter@24c873a1, org.springframework.security.web.access.ExceptionTranslationFilter@355da0c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26a947e4]
+[2021-11-29 15:27:56:6714][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:27:56:6867][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:27:56:6939][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:27:57:7223][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:27:57:7546][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:27:57:7570][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:27:57:7572][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:27:57:7587][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:27:57:7596][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:27:57:7866][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:27:57:7876][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:27:57:7919][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.529 seconds (JVM running for 8.127)
+[2021-11-29 15:40:52:782597][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:40:52:782663][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:40:57:1369][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 20109 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:40:57:1372][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:40:57:1372][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:40:57:1487][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:40:57:1488][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:40:59:3914][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:40:59:3924][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:40:59:3924][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:40:59:3924][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:40:59:4006][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:40:59:4007][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2518 ms
+[2021-11-29 15:41:02:6406][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:41:02:6407][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:41:02:6407][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:41:02:6407][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:41:02:6407][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:41:02:6649][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67d95979, org.springframework.security.web.context.SecurityContextPersistenceFilter@5dfc0974, org.springframework.security.web.header.HeaderWriterFilter@310661e3, org.springframework.web.filter.CorsFilter@321efd73, org.springframework.security.web.authentication.logout.LogoutFilter@6cb7a91, com.kyobo.dev.creation.config.security.JwtFilter@20f3686e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ec5c88f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@91f764f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b75b8a5, org.springframework.security.web.session.SessionManagementFilter@6ff74351, org.springframework.security.web.access.ExceptionTranslationFilter@1ddd16a6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ee13900]
+[2021-11-29 15:41:02:6796][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:41:02:6913][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:41:02:6948][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:41:02:7140][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:41:03:7539][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:41:03:7564][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:41:03:7569][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:41:03:7587][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:41:03:7609][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:41:03:7883][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:41:03:7906][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:41:03:7959][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.542 seconds (JVM running for 8.172)
+[2021-11-29 15:41:42:46193][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:41:42:46263][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:41:45:1239][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 20163 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:41:45:1240][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:41:45:1241][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:41:45:1349][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:41:45:1349][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:41:48:3979][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:41:48:3988][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:41:48:3988][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:41:48:3988][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:41:48:4078][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:41:48:4078][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2728 ms
+[2021-11-29 15:41:50:6365][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:41:50:6365][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:41:50:6365][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:41:50:6365][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:41:50:6365][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:41:50:6593][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@451aeca2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ff74351, org.springframework.security.web.header.HeaderWriterFilter@1ddd16a6, org.springframework.web.filter.CorsFilter@26c5b90c, org.springframework.security.web.authentication.logout.LogoutFilter@477adf6, com.kyobo.dev.creation.config.security.JwtFilter@67d95979, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfc0974, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c53bed6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@321efd73, org.springframework.security.web.session.SessionManagementFilter@360a81a6, org.springframework.security.web.access.ExceptionTranslationFilter@e337d16, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@506cdf19]
+[2021-11-29 15:41:50:6770][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:41:51:6892][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:41:51:6930][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:41:51:7092][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:41:51:7497][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:41:51:7520][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:41:51:7526][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:41:51:7540][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:41:51:7554][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:41:52:7858][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:41:52:7867][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:41:52:7916][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.482 seconds (JVM running for 8.13)
+[2021-11-29 15:41:52:8038][http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-29 15:41:52:8038][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-11-29 15:41:52:8043][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+[2021-11-29 15:42:21:37370][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/writing
+[2021-11-29 15:42:21:37397][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:42:42:58390][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 15:42:42:58572][http-nio-8081-exec-5] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:42:42:58603][http-nio-8081-exec-5] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: jslee(String)
+[2021-11-29 15:42:42:58624][http-nio-8081-exec-5] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 0
+[2021-11-29 15:42:42:58649][http-nio-8081-exec-5] DEBUG c.k.d.c.c.user.UserController - 잘못된 아이디입니다
+[2021-11-29 15:43:00:76429][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/join
+[2021-11-29 15:43:00:76496][http-nio-8081-exec-3] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:43:00:76498][http-nio-8081-exec-3] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:43:00:76512][http-nio-8081-exec-3] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 0
+[2021-11-29 15:43:00:76630][http-nio-8081-exec-3] DEBUG c.k.d.c.mapper.user.UserMapper.save - ==>  Preparing: INSERT INTO user (user_id, user_pw, nickname, age, email, phone) VALUES ( ?, ?, ?, ?, ?, ? )
+[2021-11-29 15:43:00:76635][http-nio-8081-exec-3] DEBUG c.k.d.c.mapper.user.UserMapper.save - ==> Parameters: admin(String), $2a$10$mUwTSypuzkLFw5bJ1aT6ku.GdayPVx5QqnTcCVKQ0/Skqv3Y1YTq6(String), admin(String), 30(Integer), admin@naver.com(String), 01012345678(String)
+[2021-11-29 15:43:00:76645][http-nio-8081-exec-3] DEBUG c.k.d.c.mapper.user.UserMapper.save - <==    Updates: 1
+[2021-11-29 15:43:00:76645][http-nio-8081-exec-3] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:43:00:76645][http-nio-8081-exec-3] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:43:00:76687][http-nio-8081-exec-3] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 1
+[2021-11-29 15:43:18:94182][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 15:43:18:94229][http-nio-8081-exec-2] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:43:18:94230][http-nio-8081-exec-2] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:43:18:94240][http-nio-8081-exec-2] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 1
+[2021-11-29 15:43:41:117101][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_seq = ?
+[2021-11-29 15:43:41:117105][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==> Parameters: 1(Long)
+[2021-11-29 15:43:41:117117][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.U.findByUserSeq - <==      Total: 1
+[2021-11-29 15:43:41:117123][http-nio-8081-exec-10] INFO  c.k.d.c.config.security.JwtFilter - Security context에 인증 정보를 저장했습니다, uri: /api/users
+[2021-11-29 15:43:41:117145][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_seq = ?
+[2021-11-29 15:43:41:117148][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==> Parameters: 1(Long)
+[2021-11-29 15:43:41:117156][http-nio-8081-exec-10] DEBUG c.k.d.c.m.u.U.findByUserSeq - <==      Total: 1
+[2021-11-29 15:44:32:168317][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:44:32:168375][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:44:36:1456][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 20297 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:44:36:1457][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:44:36:1458][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:44:36:1564][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:44:36:1564][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:44:39:3970][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:44:39:3980][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:44:39:3980][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:44:39:3980][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:44:39:4114][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:44:39:4114][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2549 ms
+[2021-11-29 15:44:41:6359][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:44:41:6360][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:44:41:6360][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:44:41:6360][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:44:41:6360][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:44:41:6615][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@234470be, org.springframework.security.web.context.SecurityContextPersistenceFilter@571695f8, org.springframework.security.web.header.HeaderWriterFilter@7dbc09eb, org.springframework.web.filter.CorsFilter@753a60fe, org.springframework.security.web.authentication.logout.LogoutFilter@538cdb6a, com.kyobo.dev.creation.config.security.JwtFilter@e042e5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e705cb4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6feb063e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50dc5dac, org.springframework.security.web.session.SessionManagementFilter@4b5fdd1f, org.springframework.security.web.access.ExceptionTranslationFilter@571e8768, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55fe0f52]
+[2021-11-29 15:44:42:6903][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:44:42:7023][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:44:42:7051][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:44:42:7169][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:44:42:7476][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:44:42:7492][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:44:42:7495][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:44:42:7508][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:44:42:7528][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:44:43:7834][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:44:43:7844][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:44:43:7894][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.478 seconds (JVM running for 8.1)
+[2021-11-29 15:44:44:9453][http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-29 15:44:44:9454][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-11-29 15:44:44:9460][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[2021-11-29 15:44:44:9499][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:44:9527][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:45:9746][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:45:9757][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:47:12050][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:47:12056][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:47:12156][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:47:12159][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:49:14673][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:49:14691][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:50:14774][http-nio-8081-exec-6] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:50:14779][http-nio-8081-exec-6] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:50:15573][http-nio-8081-exec-7] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:50:15575][http-nio-8081-exec-7] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:50:15676][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:50:15678][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:51:16613][http-nio-8081-exec-9] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:51:16616][http-nio-8081-exec-9] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:51:16686][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:51:16689][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:53:17839][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:53:17848][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:53:17932][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:53:17934][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:54:19624][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:54:19628][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:55:19718][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:55:19729][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:56:20738][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:56:20740][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:56:20818][http-nio-8081-exec-6] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:56:20823][http-nio-8081-exec-6] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:57:21743][http-nio-8081-exec-7] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:57:21746][http-nio-8081-exec-7] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:57:21870][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:57:21871][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:58:22781][http-nio-8081-exec-9] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:58:22783][http-nio-8081-exec-9] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:58:22878][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:58:22889][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:58:23671][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:58:23675][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:59:23755][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:59:23760][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:59:24408][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:44:59:24414][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:44:59:24496][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:44:59:24497][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:00:25597][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:45:00:25671][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:45:03:1172][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 20324 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:45:03:1173][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:45:03:1173][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:45:03:1287][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:45:03:1287][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:45:06:3693][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:45:06:3703][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:45:06:3704][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:45:06:3704][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:45:06:3799][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:45:06:3799][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2512 ms
+[2021-11-29 15:45:08:5950][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:45:08:5951][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:45:08:5951][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:45:08:5951][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:45:08:5951][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:45:08:6236][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@305001a1, org.springframework.security.web.context.SecurityContextPersistenceFilter@37d03dfc, org.springframework.security.web.header.HeaderWriterFilter@1363056a, org.springframework.web.filter.CorsFilter@4d198f19, org.springframework.security.web.authentication.logout.LogoutFilter@5c4cbbaf, com.kyobo.dev.creation.config.security.JwtFilter@3eaa4af9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@da04486, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23f7cabf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7229fd94, org.springframework.security.web.session.SessionManagementFilter@52d5c044, org.springframework.security.web.access.ExceptionTranslationFilter@9842ed9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53bd0605]
+[2021-11-29 15:45:09:6412][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:45:09:6565][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:45:09:6588][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:45:09:6747][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:45:09:7034][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:45:09:7052][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:45:09:7055][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:45:09:7078][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:45:09:7157][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:45:10:7593][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:45:10:7599][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:45:10:7646][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.241 seconds (JVM running for 7.867)
+[2021-11-29 15:45:10:8020][http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-29 15:45:10:8021][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-11-29 15:45:10:8027][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[2021-11-29 15:45:10:8065][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:45:10:8092][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:10:8319][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:45:10:8326][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:12:9866][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:45:12:9873][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:12:9969][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:45:12:9979][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:31:28931][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:45:31:28944][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:31:29044][http-nio-8081-exec-6] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:45:31:29051][http-nio-8081-exec-6] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:32:30037][http-nio-8081-exec-7] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:45:32:30041][http-nio-8081-exec-7] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:45:32:30135][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:45:32:30136][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:46:11:68569][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:46:11:68579][http-nio-8081-exec-10] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:46:11:68720][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:46:11:68732][http-nio-8081-exec-1] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:46:14:71439][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:46:14:71456][http-nio-8081-exec-2] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:46:14:71547][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:46:14:71548][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:46:15:72527][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /swagger-ui.htm
+[2021-11-29 15:46:15:72530][http-nio-8081-exec-4] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:46:15:72624][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:46:15:72626][http-nio-8081-exec-5] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:47:13:130517][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /
+[2021-11-29 15:47:13:130534][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:47:13:130666][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /favicon.ico
+[2021-11-29 15:47:13:130673][http-nio-8081-exec-3] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /error
+[2021-11-29 15:47:24:142188][http-nio-8081-exec-6] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 15:47:25:142361][http-nio-8081-exec-6] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:47:25:142390][http-nio-8081-exec-6] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:47:25:142408][http-nio-8081-exec-6] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 0
+[2021-11-29 15:47:25:142433][http-nio-8081-exec-6] DEBUG c.k.d.c.c.user.UserController - 잘못된 아이디입니다
+[2021-11-29 15:47:34:152271][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/join
+[2021-11-29 15:47:34:152321][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:47:34:152323][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:47:35:152332][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 0
+[2021-11-29 15:47:35:152449][http-nio-8081-exec-8] DEBUG c.k.d.c.mapper.user.UserMapper.save - ==>  Preparing: INSERT INTO user (user_id, user_pw, nickname, age, email, phone) VALUES ( ?, ?, ?, ?, ?, ? )
+[2021-11-29 15:47:35:152454][http-nio-8081-exec-8] DEBUG c.k.d.c.mapper.user.UserMapper.save - ==> Parameters: admin(String), $2a$10$qq2/A9ax.q/suq0.cuW/WuOoFfK9yayCqyW0rw8AKIbjrfuzrg2DS(String), admin(String), 30(Integer), admin@naver.com(String), 01012345678(String)
+[2021-11-29 15:47:35:152462][http-nio-8081-exec-8] DEBUG c.k.d.c.mapper.user.UserMapper.save - <==    Updates: 1
+[2021-11-29 15:47:35:152462][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:47:35:152462][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:47:35:152472][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 1
+[2021-11-29 15:47:40:157551][http-nio-8081-exec-9] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 15:47:40:157597][http-nio-8081-exec-9] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:47:40:157599][http-nio-8081-exec-9] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:47:40:157609][http-nio-8081-exec-9] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 1
+[2021-11-29 15:47:55:172896][http-nio-8081-exec-1] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_seq = ?
+[2021-11-29 15:47:55:172900][http-nio-8081-exec-1] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==> Parameters: 1(Long)
+[2021-11-29 15:47:55:172909][http-nio-8081-exec-1] DEBUG c.k.d.c.m.u.U.findByUserSeq - <==      Total: 1
+[2021-11-29 15:47:55:172911][http-nio-8081-exec-1] INFO  c.k.d.c.config.security.JwtFilter - Security context에 인증 정보를 저장했습니다, uri: /api/users
+[2021-11-29 15:47:55:172924][http-nio-8081-exec-1] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_seq = ?
+[2021-11-29 15:47:55:172926][http-nio-8081-exec-1] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==> Parameters: 1(Long)
+[2021-11-29 15:47:55:172934][http-nio-8081-exec-1] DEBUG c.k.d.c.m.u.U.findByUserSeq - <==      Total: 1
+[2021-11-29 15:50:25:323257][http-nio-8081-exec-7] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_seq = ?
+[2021-11-29 15:50:25:323262][http-nio-8081-exec-7] DEBUG c.k.d.c.m.u.U.findByUserSeq - ==> Parameters: 1(Long)
+[2021-11-29 15:50:25:323272][http-nio-8081-exec-7] DEBUG c.k.d.c.m.u.U.findByUserSeq - <==      Total: 1
+[2021-11-29 15:50:25:323273][http-nio-8081-exec-7] INFO  c.k.d.c.config.security.JwtFilter - Security context에 인증 정보를 저장했습니다, uri: /api/writing
+[2021-11-29 15:50:26:323342][http-nio-8081-exec-7] DEBUG c.k.d.c.m.w.WritingMapper.save - ==>  Preparing: INSERT INTO writing (title, contents) VALUES ( ?, ? )
+[2021-11-29 15:50:26:323343][http-nio-8081-exec-7] DEBUG c.k.d.c.m.w.WritingMapper.save - ==> Parameters: test(String), <h1>test contents</h1>(String)
+[2021-11-29 15:50:26:323351][http-nio-8081-exec-7] DEBUG c.k.d.c.m.w.WritingMapper.save - <==    Updates: 1
+[2021-11-29 15:52:47:465079][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2021-11-29 15:52:47:465138][SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2021-11-29 15:52:51:1423][restartedMain] INFO  c.k.d.creation.CreationApplication - Starting CreationApplication using Java 1.8.0_291 on Jaesukui-MacBookPro.local with PID 20670 (/Users/jaesuklee/Documents/workspace/creation/build/classes/java/main started by jaesuklee in /Users/jaesuklee/Documents/workspace/creation)
+[2021-11-29 15:52:51:1425][restartedMain] DEBUG c.k.d.creation.CreationApplication - Running with Spring Boot v2.5.6, Spring v5.3.12
+[2021-11-29 15:52:51:1425][restartedMain] INFO  c.k.d.creation.CreationApplication - No active profile set, falling back to default profiles: default
+[2021-11-29 15:52:51:1552][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2021-11-29 15:52:51:1553][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2021-11-29 15:52:54:4255][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+[2021-11-29 15:52:54:4266][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:52:54:4266][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2021-11-29 15:52:54:4266][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+[2021-11-29 15:52:54:4396][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2021-11-29 15:52:54:4397][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2844 ms
+[2021-11-29 15:52:56:6574][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/v2/api-docs'] with []
+[2021-11-29 15:52:56:6574][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-resources/**'] with []
+[2021-11-29 15:52:56:6574][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger-ui.html'] with []
+[2021-11-29 15:52:56:6574][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/webjars/**'] with []
+[2021-11-29 15:52:56:6574][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure Ant [pattern='/swagger/**'] with []
+[2021-11-29 15:52:56:6787][restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35e18dc, org.springframework.security.web.context.SecurityContextPersistenceFilter@310661e3, org.springframework.security.web.header.HeaderWriterFilter@526bbcf6, org.springframework.web.filter.CorsFilter@76d26c3c, org.springframework.security.web.authentication.logout.LogoutFilter@427abe22, com.kyobo.dev.creation.config.security.JwtFilter@506cdf19, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cfc2c4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f19b880, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d8a4095, org.springframework.security.web.session.SessionManagementFilter@1ddd16a6, org.springframework.security.web.access.ExceptionTranslationFilter@32ffa2d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45e18167]
+[2021-11-29 15:52:57:6944][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2021-11-29 15:52:57:7047][restartedMain] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+[2021-11-29 15:52:57:7208][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[2021-11-29 15:52:57:7235][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+[2021-11-29 15:52:57:7239][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[2021-11-29 15:52:57:7259][restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+[2021-11-29 15:52:57:7281][restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[2021-11-29 15:52:57:7604][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: joinUsingPOST_1
+[2021-11-29 15:52:57:7632][restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: loginUsingPOST_1
+[2021-11-29 15:52:57:7673][restartedMain] INFO  c.k.d.creation.CreationApplication - Started CreationApplication in 7.268 seconds (JVM running for 7.895)
+[2021-11-29 15:53:04:14131][http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2021-11-29 15:53:04:14132][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2021-11-29 15:53:04:14138][http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+[2021-11-29 15:53:39:49813][http-nio-8081-exec-8] DEBUG c.k.d.c.config.security.JwtFilter - 유효한 Jwt 토큰이 없습니다, uri: /api/login
+[2021-11-29 15:53:39:49897][http-nio-8081-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2021-11-29 15:53:40:50131][http-nio-8081-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2021-11-29 15:53:40:50215][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==>  Preparing: SELECT user_seq, user_id, user_pw, nickname, age, email, phone, role FROM user WHERE user_id = ?
+[2021-11-29 15:53:40:50239][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - ==> Parameters: admin(String)
+[2021-11-29 15:53:40:50260][http-nio-8081-exec-8] DEBUG c.k.d.c.m.u.UserMapper.findByUserId - <==      Total: 1

@@ -3,7 +3,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.kyobo.dev.creation.mapper.SocialMapper">
+<mapper namespace="com.kyobo.dev.creation.mapper.social.SocialMapper">
 
     <select id="findByProviderUid" resultType="SocialDto">
         SELECT social_seq, user_seq, provider, provider_uid, access_token, refresh_token, nickname

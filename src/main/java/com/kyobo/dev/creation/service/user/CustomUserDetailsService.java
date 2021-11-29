@@ -1,8 +1,8 @@
-package com.kyobo.dev.creation.service;
+package com.kyobo.dev.creation.service.user;
 
-import com.kyobo.dev.creation.dto.UserDto;
+import com.kyobo.dev.creation.dto.user.UserDto;
 import com.kyobo.dev.creation.exception.UserNotFoundException;
-import com.kyobo.dev.creation.mapper.UserMapper;
+import com.kyobo.dev.creation.mapper.user.UserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,15 +1,15 @@
-package com.kyobo.dev.creation.controller;
+package com.kyobo.dev.creation.controller.social;
 
-import com.kyobo.dev.creation.dto.*;
 import com.kyobo.dev.creation.dto.response.BaseResponse;
 import com.kyobo.dev.creation.dto.response.SingleDataResponse;
-import com.kyobo.dev.creation.exception.DuplicatedUsernameException;
+import com.kyobo.dev.creation.dto.social.KakaoProfile;
+import com.kyobo.dev.creation.dto.social.SocialDto;
+import com.kyobo.dev.creation.dto.user.UserDto;
 import com.kyobo.dev.creation.exception.LoginFailedException;
-import com.kyobo.dev.creation.exception.UserNotFoundException;
-import com.kyobo.dev.creation.service.KakaoService;
+import com.kyobo.dev.creation.service.social.KakaoService;
 import com.kyobo.dev.creation.service.ResponseService;
-import com.kyobo.dev.creation.service.SocialService;
-import com.kyobo.dev.creation.service.UserService;
+import com.kyobo.dev.creation.service.social.SocialService;
+import com.kyobo.dev.creation.service.user.UserService;
 import io.swagger.annotations.*;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -17,7 +17,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @Api(tags = {"2. Social Login"})

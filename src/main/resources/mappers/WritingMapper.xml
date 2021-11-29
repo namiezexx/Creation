@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kyobo.dev.creation.mapper.writing.WritingMapper">
+
+    <select id="findByWritingSeq" resultType="WritingDto">
+        SELECT writing_seq, title, contents
+        FROM writing
+        WHERE writing_seq = #{writing_seq}
+    </select>
+
+    <insert id="save" parameterType="WritingDto">
+        INSERT INTO writing (title, contents)
+        VALUES ( #{title}, #{contents} )
+    </insert>
+</mapper>

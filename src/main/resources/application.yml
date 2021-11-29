@@ -7,7 +7,8 @@ spring:
     username: namiezexx
     password: jslee0707!
     driver-class-name: org.mariadb.jdbc.Driver
-    initialization-mode: always # classpath? schema.sql ? DDL DML ????? ??? ????? ?? (??? in-memory db? ????.)
+    #initialization-mode: always # classpath 에 설정한 .sql 스크립트를 기동한다.
+    initialization-mode: never
   thymeleaf:
     prefix: classpath:templates/
     check-template-location: true

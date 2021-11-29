@@ -25,3 +25,14 @@ CREATE TABLE user (
     phone varchar(20),
     role varchar(100) default 'ROLE_USER'
 );
+
+SET foreign_key_checks = 0;
+DROP TABLE IF EXISTS writing;
+SET foreign_key_checks = 1;
+
+CREATE TABLE writing (
+    writing_seq bigint not null primary key auto_increment,
+    title varchar(100) not null,
+    contents longtext not null,
+    create_date datetime not null default current_timestamp
+);

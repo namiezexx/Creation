@@ -1,4 +1,4 @@
-package com.kyobo.dev.creation.dto;
+package com.kyobo.dev.creation.dto.user;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

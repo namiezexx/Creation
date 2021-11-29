@@ -1,4 +1,4 @@
-package com.kyobo.dev.creation.dto;
+package com.kyobo.dev.creation.dto.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;

@@ -1,16 +1,14 @@
-package com.kyobo.dev.creation.service;
+package com.kyobo.dev.creation.service.social;
 
-import com.kyobo.dev.creation.dto.LoginDto;
-import com.kyobo.dev.creation.dto.SocialDto;
-import com.kyobo.dev.creation.dto.UserDto;
+import com.kyobo.dev.creation.dto.social.SocialDto;
+import com.kyobo.dev.creation.dto.user.UserDto;
 import com.kyobo.dev.creation.exception.DuplicatedUsernameException;
 import com.kyobo.dev.creation.exception.LoginFailedException;
 import com.kyobo.dev.creation.exception.UserNotFoundException;
-import com.kyobo.dev.creation.mapper.SocialMapper;
-import com.kyobo.dev.creation.mapper.UserMapper;
+import com.kyobo.dev.creation.mapper.social.SocialMapper;
+import com.kyobo.dev.creation.mapper.user.UserMapper;
 import com.kyobo.dev.creation.util.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

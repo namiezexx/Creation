@@ -1,15 +1,12 @@
-package com.kyobo.dev.creation.service;
+package com.kyobo.dev.creation.service.social;
 
 import com.google.gson.Gson;
-import com.kyobo.dev.creation.dto.KakaoProfile;
-import com.kyobo.dev.creation.dto.response.RetKakaoAuth;
+import com.kyobo.dev.creation.dto.social.KakaoProfile;
 import com.kyobo.dev.creation.exception.UserNotFoundException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
-import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
